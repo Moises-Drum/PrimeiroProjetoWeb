@@ -1,0 +1,241 @@
+@font-face {
+    src: url(/Fontes/broadway-p-ot.ttf);
+    font-family: 'broadwayoutdot';    
+}
+
+@font-face {
+    src: url(/Fontes/century-gothic.ttf);
+    font-family: 'century-gothic';    
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 12vh;
+    background-color: #F2873A;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cabecalho-principal{
+    height: 100%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-size: 70px;
+    margin-left: 0px;
+    font-family: broadwayoutdot;
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.navegacao{
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 40%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: century-gothic;
+    font-size: 30px;
+}
+
+.lista{
+    cursor: pointer;
+    background-color: white;
+    padding: 6px 20px;
+    border-radius: 50px;
+    box-shadow: 1px 5px 7px rgb(27, 27, 27);
+}
+
+.lista:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.foto-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 20%;
+}
+
+.foto{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.foto:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.Profile{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-family: century-gothic;
+    font-size: 30px;
+    padding: 6px 20px;
+    border-radius: 50px;
+    box-shadow: 1px 5px 7px rgb(27, 27, 27);
+}
+
+.Profile:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.secao-principal{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 76vh;
+    background-color: #F1DDC0;
+}
+
+.titulo{
+    position: absolute;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: century-gothic;
+    font-size: 40px;
+    text-shadow: 2px 5px #7f7f7f;
+}
+
+.rodape{
+    width: 100%;
+    height: 12vh;
+    background-color: #F2873A;
+}
+
+.img-ovo{
+    padding-bottom: 20px;
+}
+
+.ovo{
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+    width: 25%;
+    height: 82%;
+}
+
+.titulo-foto{
+    padding-bottom: 20px;
+    font-family: century-gothic;
+    font-size: 35px;
+    text-shadow: 2px 2px #7f7f7f;
+}
+
+.texto-ovo{
+    font-family: century-gothic;
+    font-size: 22px;
+    text-align: center;
+}
+
+.botao{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: century-gothic;
+    color: white;
+    margin-top: 20px;
+    border-radius: 125px;
+    width: 130px;
+    height: 55px;
+    background-color: black;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+    width: 25%;
+    height: 82%;
+}
+
+@media only screen and (max-device-width: 2089px) {
+    .botao{
+        font-size: 30px;
+    }
+
+    .texto-ovo{
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-device-width: 1547px) {
+    .botao{
+        font-size: 25px;
+    }
+
+    .texto-ovo{
+        font-size: 18px;
+    }
+
+    video{
+        width: 500px;
+    }
+    
+}
+
+@media only screen and (max-device-width: 1288px) {
+    .botao{
+        margin-top: 10px;
+    }
+
+    video{
+        width: 400px;
+    }
+
+    .titulo-foto{
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .titulo{
+        font-size: 30px;
+        text-shadow: 2px 3px #7f7f7f;
+    }
+    
+    
+}
